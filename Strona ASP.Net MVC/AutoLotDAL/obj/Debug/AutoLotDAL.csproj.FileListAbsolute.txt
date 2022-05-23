@@ -1,0 +1,12 @@
+B:\1_C#\ASP_NET\MVC\AutoLotDAL\bin\Debug\AutoLotDAL.dll.config
+B:\1_C#\ASP_NET\MVC\AutoLotDAL\bin\Debug\AutoLotDAL.dll
+B:\1_C#\ASP_NET\MVC\AutoLotDAL\bin\Debug\AutoLotDAL.pdb
+B:\1_C#\ASP_NET\MVC\AutoLotDAL\bin\Debug\EntityFramework.dll
+B:\1_C#\ASP_NET\MVC\AutoLotDAL\bin\Debug\EntityFramework.SqlServer.dll
+B:\1_C#\ASP_NET\MVC\AutoLotDAL\bin\Debug\EntityFramework.xml
+B:\1_C#\ASP_NET\MVC\AutoLotDAL\bin\Debug\EntityFramework.SqlServer.xml
+B:\1_C#\ASP_NET\MVC\AutoLotDAL\obj\Debug\AutoLotDAL.csproj.AssemblyReference.cache
+B:\1_C#\ASP_NET\MVC\AutoLotDAL\obj\Debug\AutoLotDAL.csproj.CoreCompileInputs.cache
+B:\1_C#\ASP_NET\MVC\AutoLotDAL\obj\Debug\AutoLotDAL.csproj.CopyComplete
+B:\1_C#\ASP_NET\MVC\AutoLotDAL\obj\Debug\AutoLotDAL.dll
+B:\1_C#\ASP_NET\MVC\AutoLotDAL\obj\Debug\AutoLotDAL.pdb
