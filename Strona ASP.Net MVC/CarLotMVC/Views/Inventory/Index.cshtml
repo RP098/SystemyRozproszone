@@ -1,0 +1,56 @@
+﻿@model IEnumerable<AutoLotDAL.Inventory>
+
+@{
+    ViewBag.Title = "Garaż";
+}
+
+<h2>Twoje samochody</h2>
+
+<p>
+    <a href="@Url.Action("Create")"><span class="glyphicon glyphicon-plus"></span> Utwórz nowy samochód</a>
+</p>
+<table class="table" >
+    <tr>
+        <th>
+            Marka @*@Html.DisplayNameFor(model => model.Make)*@
+        </th>
+        <th>
+            Kolor @* @Html.DisplayNameFor(model => model.Color)*@
+        </th>
+        <th>
+            Nazwa twojego auta  @*@Html.DisplayNameFor(model => model.CarNickName)*@
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in SortCars( Model.ToList()))
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Make)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Color)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CarNickName)
+            </td>
+            <td>
+                <a href="@Url.Action("Edit",new { id=item.CarId})"><span class="glyphicon glyphicon-edit"> </span> Edytuj </a>|
+                <a href="@Url.Action("Details",new { id=item.CarId})"><span class="glyphicon glyphicon-list-alt"> </span> Szczegóły </a>|
+                <a href="@Url.Action("Delete",new { id=item.CarId})"><span class="glyphicon glyphicon-trash"> </span> Usuń </a>
+              
+            </td>
+        </tr>
+    }
+
+    @functions{
+        public IList<AutoLotDAL.Inventory> SortCars(IList<AutoLotDAL.Inventory> cars)
+        {
+            var list = from s in cars orderby s.CarNickName select s;
+            return list.ToList();
+        }
+
+    }
+
+</table>
